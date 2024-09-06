@@ -1,0 +1,589 @@
+
+body {
+    margin: 0;
+    height: 100%;
+    font-family: adobeclear;
+}
+
+img {
+    box-shadow: 5px 5px 5px rgb(126, 126, 126);
+    border-radius: 10px;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+@font-face {
+    font-family: adobeclear;
+    src: url('../fonts/Adobeclean-Regular.otf');
+}
+
+@font-face {
+    font-family: noedisplay;
+    src: url('../fonts/noe-display-bold.otf');
+}
+
+/* Rules for image headers */
+.homeimage {
+    background-image: url('../images/Cartagena/cartagena.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative; 
+    height: 70vh;
+    cursor: pointer;
+}
+
+.imgLifeStyle {
+    background-image: url('../images/Lifestyle/lifestyle2.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative; 
+    height: 70vh;
+}
+
+.imgmedellin {
+    background-image: url('../images/medellin/medellin2.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative; 
+    height: 70vh;
+}
+
+.imgCartagena {
+    background-image: url('../images/Cartagena/Cartagena3.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative; 
+    height: 70vh;
+}
+
+.imgSanAndres {
+    background-image: url('../images/San-andres/san\ andres\ islas.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative; 
+    height: 70vh;
+}
+
+
+.imgBogota {
+    background-image: url('../images/Bogota/bogota2.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative; 
+    height: 70vh;
+}
+
+.imgEvents {
+    background-image: url('../images/Events/Carnivals\ colombia.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative; 
+    height: 70vh;
+}
+
+.imgReviews {
+    background-image: url('../images/reviews/colombia.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative; 
+    height: 80vh;
+}
+
+
+
+/* Rules for header */
+.nav{
+    overflow: hidden;
+    background-color: #00000094;
+    border-radius: 10px;
+    position: sticky;
+    top: 3%;
+    margin: 3em;
+    width: auto;
+    float: right;
+    z-index: 1000;
+}
+
+.nav a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.nav a:hover {
+    background-color: rgba(44, 56, 100, 0.991);
+}
+
+.fade-in {
+    animation: fadeIn 3s;
+}
+.logo {
+    padding-left: 3vh;
+    box-shadow: none;
+}
+
+/* Rules for introduction */
+
+h1 {
+    color:rgb(207, 194, 53);
+    text-align: center;
+    padding-top: 1em;
+}
+p {
+    color: rgba(44, 56, 100, 0.991);
+    text-align: center;
+    padding-bottom: 2em;
+    font-size: 2.5vh;
+}
+
+/* Rules for Destinations */
+
+.tdestinations {
+    background-color: rgba(74, 74, 109, 0.072);
+    height: 120vh;
+}
+
+.moreText {
+    color: rgba(44, 56, 100, 0.991);
+    text-align: center;
+    padding-top: 1.5em;
+}
+
+.moreBtn {
+    background-color: rgb(207, 194, 53);
+    color: white;
+    padding: 0.5em 1em;
+    border: none;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+}
+
+.moreBtn a {
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+.moreBtn:hover {
+    background-color: rgba(74, 74, 109, 0.512);
+    color: rgba(44, 56, 100, 0.991);
+}
+
+/* Rules for destinationFlex */
+
+.destinationFlex {
+    display: flex;
+    justify-content: center;
+}
+
+/* Rules for Buttom Cities */
+
+.dropbtn {
+    background-color: rgb(207, 194, 53);
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+  
+  .dropdown {
+    padding: 1em;
+    padding-top: 3.5em;
+}
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+  
+  .dropdown-content a {
+    color: rgba(44, 56, 100, 0.991);
+    padding: 10px 12px;
+    text-decoration: none;
+    display: block;
+}
+  
+  .dropdown-content a:hover {
+    background-color: rgba(44, 56, 100, 0.991);
+    color: rgba(255, 255, 255, 0.8);
+}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+}
+  
+  .dropdown:hover .dropbtn {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: rgba(44, 56, 100, 0.991);
+}
+
+
+/* Rules for carrousel */
+
+.carrousel {
+    position: relative;
+}
+
+.imgcarrousel {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 60vh;
+    width: 60%;
+}
+
+.textImgCarrousel {
+    color: white;
+    background-color: rgba(74, 74, 109, 0.458);
+    font-weight: bold;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 0px;
+    width: 58%;
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    z-index: 1000;
+}
+
+.textImgMedellin {
+    color: white;
+    background-color: rgba(74, 74, 109, 0.458);
+    font-weight: bold;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 40px;
+    width: 58%;
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+.hidden {
+    display: none;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 55%;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 4vh;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    margin-left: 20%;
+}
+
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+    margin-right: 20%;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: rgba(44, 56, 100, 0.991);
+}
+
+.cityName {
+    color: #f2f2f2;
+    background-color: rgba(74, 74, 109, 0.458);
+    font-size: 2.5vh;
+    padding: 8px 12px;
+    position: absolute;
+    margin-left: 20%;
+    z-index: 10000;
+  }
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    margin-top: 1em;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+/* Rules for city pages */
+
+.citiesPage {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex{
+    display: flex;
+    flex-direction: row;
+    height: 70vh;
+}
+.flex > div {
+    flex: 0.5;
+}
+
+.attractions:nth-child(odd) {
+    background-color: rgba(74, 74, 109, 0.072);
+}
+
+h2 {
+    color:rgb(130, 10, 10);
+    text-align:center;
+    padding-bottom: 1em;
+    padding-top: 1em;
+}
+
+.imgcities {
+    margin: auto;
+    height: 40vh;
+    width: 60vh;
+}
+
+.textCities {
+    color: rgba(44, 56, 100, 0.991);
+    text-align: center;
+    margin: auto;
+    padding: 4em;
+    font-size: large;
+}
+
+.imgcities {
+    margin: auto;
+    height: 40vh;
+    width: 60vh;
+}
+
+.textCities {
+    color: rgba(44, 56, 100, 0.991);
+    text-align: center;
+    margin: auto;
+    padding: 4em;
+}
+
+.attractions{
+    display: flex;
+    flex-direction: row;
+    height: 70vh;
+}
+.attractions > div {
+    flex: 0.5;
+}
+
+
+/* Rules for carrousel city pages */
+
+.prev2, .next2 {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 4vh;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    margin-left: 20%;
+}
+
+.next2 {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+    margin-right: 20%;
+}
+
+.prev2:hover, .next2:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: rgba(44, 56, 100, 0.991);
+}
+
+/* Rules for acomodation img */
+
+.accomodationImg {
+    display: block;
+    margin: auto;
+    height: 60vh;
+    width: 90vh;
+}
+
+/* Rules for gallery */
+
+.bgGallery {
+    background-color: none;
+    position: relative; 
+    height: 55vh;
+}
+
+.bgGalleryCitiesPage {
+    background-color: none;
+    position: relative; 
+    height: 40vh;
+}
+
+.bgGalleryAttractions {
+    background-color: rgba(74, 74, 109, 0.072);
+    position: relative; 
+    height: 120vh;
+}
+
+.bgGalleryActivities {
+    background-color: none;
+    position: relative; 
+    height: 70vh;
+}
+
+.bgGalleryAccomodation {
+    background-color: rgba(74, 74, 109, 0.072);
+    position: relative; 
+    height: 80vh;
+}
+
+.bgGalleryCalendar {
+    background-color: rgba(74, 74, 109, 0.072);
+    position: relative; 
+    height: 210vh;
+}
+
+.galContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.gallery {
+    margin: 1em;
+    width: 40vh;
+}
+
+.gallery a {
+    text-decoration: none;
+}
+  
+.gallery img {
+    width: 100%;
+    height: 30vh;
+}
+
+.gallery img:hover {
+    opacity: 0.7;
+    transition: .5s ease;
+}
+
+.description {
+    background-color: rgba(74, 74, 109, 0.121);
+    padding: 0.5em;
+    text-align: center;
+    color: rgba(44, 56, 100, 0.991);
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+}
+
+.descriptionAttractions {
+    background-color: rgba(74, 74, 109, 0.121);
+    padding: 0.5em;
+    text-align: center;
+    color: rgba(44, 56, 100, 0.991);
+    font-weight: bold;
+    font-size: 2.5vh;
+}
+
+/*Style rules for Lifestyle*/
+
+.weatherImg {
+    margin: 2%;
+    margin-top: 4%;
+}
+
+/*Style rules for videos*/
+
+.cartagenaVideo {
+    border: none;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 5%;
+}
+
+.videoFlex {
+    display: flex;
+    justify-content: center;
+
+}
+
+/*Style rules for event gallery description */
+
+#titleEvents {
+    font-weight: bolder;
+}
+
+#dateEvent {
+    font-size: small;
+}
+
+#descriptionEvent {
+    text-align: left;
+}
+
+.reviews {
+    margin: 3%;
+}
+
+/*Style rules for footer content */
+footer {
+    text-align: center;
+    font-size: 0.65em;
+    clear: left;
+    padding-top: 5em;
+}
+
+footer a {
+    color: rgba(44, 56, 100, 0.991);
+    text-decoration: none;
+    font-size: small;
+}
